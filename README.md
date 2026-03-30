@@ -103,7 +103,7 @@ Always use **international format**:
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/phonerecon.git
+git clone https://github.com/rishimistry/phonerecon.git
 cd phonerecon
 ```
 
