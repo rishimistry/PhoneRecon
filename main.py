@@ -519,7 +519,7 @@ def analyze_number(number, save=False):
         "  [!] WhatsApp check is best-effort only.",
         "  [!] All data from public records. No API key used.",
         SEP,
-        "  PhoneXtract v3.0  by Alok Thakur  |  Firewall Breaker",
+        "  PhoneRecon v3.0  by Rishi Mistry ",
         SEP,
     ]
 
@@ -636,7 +636,7 @@ def main_menu():
             clear_screen()
             banner()
             print(Fore.CYAN + """
-  PhoneXtract v3.0  --  Number Intelligence Tool
+  PhoneRecon v3.0  --  Number Intelligence Tool
   ================================================
 
   WHAT IT SHOWS:
