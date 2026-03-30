@@ -52,78 +52,150 @@ parse → build → enrich → output
 
 ---
 
-## 🚀 Usage
+## 📲 Installation — Termux (Android)
 
-### 🔍 Scan a Number
-
-```bash
-python main.py scan +919876543210
-```
-
----
-
-### 📦 Batch Scan
+### Step by Step
 
 ```bash
-python main.py batch numbers.txt
+pkg update && pkg upgrade -y
 ```
-
----
-
-### 📄 Export JSON
 
 ```bash
-python main.py scan +919876543210 --json
+pkg install git -y
 ```
-
----
-
-### ℹ️ Info
 
 ```bash
-python main.py info
+git clone https://github.com/thakur2309/phonextract.git
 ```
-
----
-
-## 📁 Input Format
-
-Always use **international format**:
-
-| Country    | Example       |
-| ---------- | ------------- |
-| 🇮🇳 India | +919876543210 |
-| 🇺🇸 USA   | +14155552671  |
-| 🇬🇧 UK    | +447911123456 |
-
----
-
-## 🛠️ Installation
-
-### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/rishimistry/phonerecon.git
-cd phonerecon
+cd phonextract
 ```
-
----
-
-### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+```bash
+python3 phonextract.py
+```
 
-### 3️⃣ Run Tool
+### ⚡ One-Line Install (Termux)
 
 ```bash
-python main.py scan +919876543210
+pkg update && pkg upgrade && pkg install git && git clone https://github.com/thakur2309/phonextract.git && cd phonextract && pip install -r requirements.txt && python3 phonextract.py
 ```
 
 ---
+
+## 🐉 Installation — Kali Linux (Using venv)
+
+> On Kali Linux, system-wide `pip install` is restricted. It is recommended to use a **Python virtual environment (venv)** to avoid errors.
+
+### Step 1 — Update your system
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Step 2 — Install required packages
+
+```bash
+sudo apt install python3-venv python3-pip git -y
+```
+
+### Step 3 — Clone the repository
+
+```bash
+git clone https://github.com/rishimistry/phonerecon.git
+```
+
+### Step 4 — Navigate into the folder
+
+```bash
+cd phonerecon
+```
+
+### Step 5 — Create a virtual environment
+
+```bash
+python3 -m venv venv
+```
+
+### Step 6 — Activate the virtual environment
+
+```bash
+source venv/bin/activate
+```
+
+> ✅ You will see `(venv)` at the start of your terminal — this means the virtual environment is active.
+
+### Step 7 — Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 8 — Run the tool
+
+```bash
+python3 phonerecon.py
+```
+
+### ⚡ One-Line Install (Kali Linux)
+
+```bash
+sudo apt update && sudo apt install python3-venv python3-pip git -y && git clone https://github.com/rishimistry/phonerecon.git && cd phonerecon && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 phonerecon.py
+```
+
+### 🔁 Run Again Next Time — Kali Linux
+
+Every time you want to use the tool again:
+
+```bash
+cd phonerecon
+source venv/bin/activate
+python3 phonerecon.py
+```
+
+### ❌ Deactivate Virtual Environment
+
+```bash
+deactivate
+```
+
+---
+
+## 🖥️ Installation — Ubuntu / Debian / Parrot OS
+
+```bash
+sudo apt update && sudo apt install python3-venv python3-pip git -y
+git clone https://github.com/rishimistry/phonerecon.git
+cd phonerecon
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 phonerecon.py
+```
+
+---
+
+## 🪟 Installation — Windows
+
+### Requirements
+- Python 3.x — Download from [python.org](https://www.python.org/downloads/)
+- Git — Download from [git-scm.com](https://git-scm.com/)
+
+### Steps
+
+```cmd
+git clone https://github.com/rishimistry/phonerecon.git
+cd phonerecon
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python phonerecon.py
+```
 
 ## 🖥️ Supported Platforms
 
