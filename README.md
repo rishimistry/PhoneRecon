@@ -266,6 +266,15 @@ If you like this project:
 
 ---
 
+## 🙏 Credits
+
+This project is inspired by the original tool PhoneXtract.
+
+Original Developer: Alok Thakur
+Original Project: PhoneXtract
+
+---
+
 <p align="center">
 Built with ⚡ by developers, for developers
 </p>
